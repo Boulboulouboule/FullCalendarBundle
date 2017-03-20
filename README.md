@@ -54,6 +54,11 @@ use AncaRebeca\FullCalendarBundle\Model\Event as BaseEvent;
 class CalendarEvent extends BaseEvent
 {
 	// Your fields 
+
+    public function __construct($title, $startDate) {
+        parent::construct($title, $startDate);
+        // Your own logic
+    }
 }
 ```
 
